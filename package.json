@@ -1,11 +1,14 @@
 {
-  "name": "testing",
+  "name": "portfolio-v2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "http://klounErik.github.io/Portfolio-v2",
   "scripts": {
     "start": "webpack-dev-server --hot --open",
-    "build": "webpack --config webpack.config.js --mode production"
+    "build": "webpack --config webpack.config.js --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -27,6 +30,7 @@
     "webpack-dev-server": "^3.10.3"
   },
   "devDependencies": {
-    "file-loader": "^6.0.0"
+    "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0"
   }
 }
