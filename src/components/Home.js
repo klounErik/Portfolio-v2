@@ -5,7 +5,7 @@ export default function Home() {
         <div className="header">
         <span className="headertext">
             <h3>
-                <code>console.log("Hello World!")</code>
+                <code>console.log("Under development")</code>
             </h3>
         </span>
         </div>
